@@ -1,16 +1,16 @@
 import 'package:angular/angular.dart';
 
-import 'src/todo_list/todo_list_component.dart';
+import 'src/components/build_week/build_week.dart';
 
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
 
 @Component(
-  selector: 'my-app',
-  styleUrls: ['app_component.css'],
+  selector: 'nk-app',
   templateUrl: 'app_component.html',
-  directives: [TodoListComponent],
+  styleUrls: ['app_component.css'],
+  directives: [BuildWeekComponent],
 )
 class AppComponent {
-  // Nothing here yet. All logic is in TodoListComponent.
+  static const weekOneImages = ["images/week1/image.jpg"];
 }
