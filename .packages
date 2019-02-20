@@ -41,6 +41,7 @@ io:packages/io/
 js:packages/js/
 json_annotation:packages/json_annotation/
 json_rpc_2:packages/json_rpc_2/
+json_serializable:packages/json_serializable/
 kernel:packages/kernel/
 logging:packages/logging/
 matcher:packages/matcher/
