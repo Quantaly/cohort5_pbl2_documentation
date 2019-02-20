@@ -15,6 +15,7 @@ class Section {
     this.content,
     this.imageUrls,
   });
-  
-  factory Section.fromJson(Map<String, dynamic> json) => _$SectionFromJson(json);
+
+  factory Section.fromJson(Map<String, dynamic> json) =>
+      _$SectionFromJson(json);
 }

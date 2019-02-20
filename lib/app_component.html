@@ -3,10 +3,9 @@
 
     <nav>
         <template ngFor let-section [ngForOf]="sections">
-            <template [ngIf]="section != null">
-                <a href="(section | async).name"
-                   [innerHtml]="(section | async).title"></a>
-            </template>
+            <a *ngIf="(section | async) != null"
+               [href]="tryAnchorName(section | async)"
+               [innerHtml]="tryTitle(section | async)"></a>
         </template>
     </nav>
 

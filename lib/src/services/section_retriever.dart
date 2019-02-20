@@ -13,8 +13,10 @@ class SectionRetriever {
 
   Future<Section> retrieve(String section) {
     if (cache.containsKey(section)) return cache[section];
-    return (cache[section] = _client.get("sections/$section.json").then(_parseSection));
+    return (cache[section] =
+        _client.get("sections/$section.json").then(_parseSection));
   }
 
-  static Section _parseSection(http.Response response) => Section.fromJson(jsonDecode(response.body));
+  static Section _parseSection(http.Response response) =>
+      Section.fromJson(jsonDecode(response.body));
 }

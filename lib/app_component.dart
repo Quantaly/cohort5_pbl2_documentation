@@ -28,4 +28,9 @@ class AppComponent implements OnInit {
   }
 
   static const sectionNames = ["week1", "week2", "testing"];
+
+  // bluuuuh this is stupid.
+  static String tryAnchorName(Section section) =>
+      "#${section?.anchorName ?? ""}";
+  static String tryTitle(Section section) => section?.title ?? "";
 }
