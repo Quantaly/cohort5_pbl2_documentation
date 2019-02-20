@@ -9,3 +9,36 @@ h1 {
   text-align: center;
   color: #364aff;
 }
+
+nav {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    background-color: #364aff;
+    margin: 0 2px;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+button {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  margin: 0;
+  border: 5px black solid;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: center;
+  background-color: white;
+
+  i {
+    color: black;
+    font-size: 36pt;
+  }
+}

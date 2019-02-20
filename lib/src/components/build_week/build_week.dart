@@ -11,6 +11,9 @@ class BuildWeekComponent {
   String title;
 
   @Input()
+  String anchorName;
+
+  @Input()
   String description;
 
   @Input()
