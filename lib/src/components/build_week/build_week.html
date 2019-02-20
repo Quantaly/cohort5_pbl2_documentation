@@ -3,4 +3,4 @@
 <p [innerHtml]="description"></p>
 
 <img *ngFor="let url of imageUrls"
-     src="url" />
+     [attr.src]="url" />

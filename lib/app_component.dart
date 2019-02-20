@@ -12,5 +12,5 @@ import 'src/components/build_week/build_week.dart';
   directives: [BuildWeekComponent],
 )
 class AppComponent {
-  static const weekOneImages = ["images/week1/image.jpg"];
+  static const weekOneImages = ["https://via.placeholder.com/360x240", "https://via.placeholder.com/360x240", "https://via.placeholder.com/360x240", ];
 }
