@@ -2,13 +2,16 @@
     <h1>The Last Hope for North Korea</h1>
 
     <nav>
-        <a *ngFor="let section of sections"
-           href="#{{section.anchorName}}"
-           [innerHtml]="section.title"></a>
+        <template ngFor let-section [ngForOf]="sections">
+            <template [ngIf]="section != null">
+                <a href="(section | async).name"
+                   [innerHtml]="(section | async).title"></a>
+            </template>
+        </template>
     </nav>
 
     <nk-section *ngFor="let section of sections"
-                [section]="section"></nk-section>
+                [section]="section | async"></nk-section>
 </div>
 
 <button>

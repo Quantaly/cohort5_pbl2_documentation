@@ -2,6 +2,7 @@ import 'package:angular/angular.dart';
 
 import 'src/components/section/section_component.dart';
 import 'src/models/section.dart';
+import 'src/services/section_retriever.dart';
 
 // AngularDart info: https://webdev.dartlang.org/angular
 // Components info: https://webdev.dartlang.org/components
@@ -11,17 +12,20 @@ import 'src/models/section.dart';
   templateUrl: 'app_component.html',
   styleUrls: ['app_component.css'],
   directives: [coreDirectives, SectionComponent],
+  pipes: [commonPipes],
+  providers: [SectionRetriever],
 )
-class AppComponent {
-  static const images = [
-    "https://via.placeholder.com/360x240",
-    "https://via.placeholder.com/360x240",
-    "https://via.placeholder.com/360x240",
-  ];
+class AppComponent implements OnInit {
+  final SectionRetriever sectionRetriever;
 
-  static const sections = [
-    Section(title: "Week One", anchorName: "WeekOne", content: "We took measurements and cut them and probably did other stuff too", imageUrls: images,),
-    Section(title: "Week Two", anchorName: "WeekTwo", content: "The glorious future awaits", imageUrls: images,),
-    Section(title: "Testing", anchorName: "Testing", content: "Will it work? Stay tuned to find out", imageUrls: images,),
-  ];
+  AppComponent(this.sectionRetriever);
+
+  List<Future<Section>> sections;
+
+  @override
+  void ngOnInit() {
+    sections = sectionNames.map(sectionRetriever.retrieve).toList();
+  }
+
+  static const sectionNames = ["week1", "week2", "testing"];
 }
