@@ -1,0 +1,7 @@
+<h2 [attr.id]="section.anchorName"
+    [innerHtml]="section.title"></h2>
+
+<p [innerHtml]="section.content"></p>
+
+<img *ngFor="let url of section.imageUrls"
+     [attr.src]="url" />

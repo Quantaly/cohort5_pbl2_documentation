@@ -2,25 +2,13 @@
     <h1>The Last Hope for North Korea</h1>
 
     <nav>
-        <a href="#{{a.week1}}">Week One</a>
-        <a href="#{{a.week2}}">Week Two</a>
-        <a href="#{{a.week3}}">Week Three</a>
+        <a *ngFor="let section of sections"
+           href="#{{section.anchorName}}"
+           [innerHtml]="section.title"></a>
     </nav>
 
-    <nk-buildweek title="Week One"
-                  [anchorName]="a.week1"
-                  description="We measured out all of our measurements. Probably we will have done other stuff too."
-                  [imageUrls]="weekOneImages"></nk-buildweek>
-
-    <nk-buildweek title="Week Two"
-                  [anchorName]="a.week2"
-                  description="The glorious future awaits."
-                  [imageUrls]="weekOneImages"></nk-buildweek>
-
-    <nk-buildweek title="Week Three"
-                  [anchorName]="a.week3"
-                  description="The glorious future awaits."
-                  [imageUrls]="weekOneImages"></nk-buildweek>
+    <nk-section *ngFor="let section of sections"
+                [section]="section"></nk-section>
 </div>
 
 <button>
