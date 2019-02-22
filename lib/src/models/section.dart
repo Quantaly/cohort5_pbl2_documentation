@@ -6,13 +6,13 @@ part 'section.g.dart';
 class Section {
   final String title;
   final String anchorName;
-  final String content;
+  final List<String> contentParagraphs;
   final List<String> imageUrls;
 
   const Section({
     this.title,
     this.anchorName,
-    this.content,
+    this.contentParagraphs,
     this.imageUrls,
   });
 
