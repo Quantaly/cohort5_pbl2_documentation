@@ -11,4 +11,6 @@ import '../../models/section.dart';
 class SectionComponent {
   @Input()
   Section section;
+
+  static const videoRoot = "https://files.itslearning.com/data/2517/101419/cohort5_pbl2_documentation_videos";
 }
