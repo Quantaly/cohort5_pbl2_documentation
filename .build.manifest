@@ -1,11 +1,14 @@
 .packages
 favicon.png
+images/homestretch/img1.jpg
+images/homestretch/img2.jpg
 images/week1/img1.jpg
 images/week1/img2.jpg
 images/week1/img3.jpg
 images/week2/img1.jpg
 images/week2/img2.jpg
 images/week2/img3.jpg
+images/week2/img4.jpg
 index.html
 main.dart.js
 packages/$sdk/_internal/ddc_sdk.sum
@@ -288,6 +291,7 @@ packages/test/src/runner/browser/static/favicon.ico
 packages/test/src/runner/browser/static/host.css
 packages/test/src/runner/browser/static/host.dart.js
 packages/test/src/runner/browser/static/index.html
+sections/homestretch.json
 sections/testing.json
 sections/week1.json
 sections/week2.json
