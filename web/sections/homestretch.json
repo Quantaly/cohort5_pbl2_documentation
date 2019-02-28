@@ -1,0 +1,11 @@
+{
+  "title": "The Home Stretch",
+  "anchorName": "TheHomeStretch",
+  "contentParagraphs": [
+    "We assembled at lunch, with our 3D-printed parts retrieved from Ruby (again, huge shout-out), to finish our build. The first major problem was that her slicing software had generated massive amounts of support material in the exact places we were supposed to stick PVC pipes through. We eventually found a giant drill bit that could take out this obstruction. Beyond that, it was a matter of drilling holes and screwing screws in the PVC and the top of the struts before finally, the build was complete - just in the nick of time."
+  ],
+  "imageUrls": [
+    "images/homestretch/img1.jpg",
+    "images/homestretch/img2.jpg"
+  ]
+}
