@@ -36,6 +36,7 @@ html:packages/html/
 http:packages/http/
 http_multi_server:packages/http_multi_server/
 http_parser:packages/http_parser/
+image:packages/image/
 intl:packages/intl/
 io:packages/io/
 js:packages/js/
@@ -53,6 +54,7 @@ package_config:packages/package_config/
 package_resolver:packages/package_resolver/
 path:packages/path/
 pedantic:packages/pedantic/
+petitparser:packages/petitparser/
 plugin:packages/plugin/
 pool:packages/pool/
 protobuf:packages/protobuf/
@@ -85,5 +87,6 @@ utf:packages/utf/
 vm_service_client:packages/vm_service_client/
 watcher:packages/watcher/
 web_socket_channel:packages/web_socket_channel/
+xml:packages/xml/
 yaml:packages/yaml/
 $sdk:packages/$sdk/
