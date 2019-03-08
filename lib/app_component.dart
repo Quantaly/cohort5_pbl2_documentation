@@ -27,7 +27,7 @@ class AppComponent implements OnInit {
     sections = sectionNames.map(sectionRetriever.retrieve).toList();
   }
 
-  static const sectionNames = ["week1", "week2", "homestretch"];
+  static const sectionNames = ["design", "week1", "week2", "homestretch"];
 
   // bluuuuh this is stupid.
   static String tryAnchorName(Section section) =>
