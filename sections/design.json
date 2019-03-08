@@ -1,0 +1,13 @@
+{
+  "title": "Design Concept",
+  "anchorName": "DesignConcept",
+  "contentParagraphs": [
+    "We started this project without any knowledge of how it would end. Our first step was to figure out what we would even build. Each group member came up with a concept, and we objectively evaluated them according to the criteria and constraints of the project. We couldn't have anything that would cost more than $100 to build, and it had to be designed to work in North Korea. Specifically, it couldn't use any power or water, since access to those is sparse in the country.",
+    "Ultimately, we decided on this design because of its ability to work without any inputs other than human labor. Some other concepts, such as hydro- or aquaponics, were determined to be more effective, but also more costly and too resource-hungry to deploy in North Korea. We took an initial concept sketch of our pulley system to a full sketch of the prototype and even a preliminary CAD model. After finalizing our material requirements and presenting our idea to our investors, we were ready to build."
+  ],
+  "imageUrls": [
+    "images/design/sketch1.jpg",
+    "images/design/sketch2.jpg",
+    "images/design/cad.jpg"
+  ]
+}

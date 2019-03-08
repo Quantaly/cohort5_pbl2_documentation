@@ -1,5 +1,8 @@
 .packages
 favicon.png
+images/design/cad.jpg
+images/design/sketch1.jpg
+images/design/sketch2.jpg
 images/homestretch/img1.jpg
 images/homestretch/img2.jpg
 images/week1/img1.jpg
@@ -291,6 +294,7 @@ packages/test/src/runner/browser/static/favicon.ico
 packages/test/src/runner/browser/static/host.css
 packages/test/src/runner/browser/static/host.dart.js
 packages/test/src/runner/browser/static/index.html
+sections/design.json
 sections/homestretch.json
 sections/testing.json
 sections/week1.json
